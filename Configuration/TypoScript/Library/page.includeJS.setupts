@@ -1,0 +1,12 @@
+# Settings for the development system
+
+page {
+	includeJS {
+		custom = EXT:theme_bootstrap_appstrap/Resources/Public/JavaScript/script.min.js
+		custom {
+			external = 0
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
+	}
+}

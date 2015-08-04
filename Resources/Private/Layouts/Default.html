@@ -1,0 +1,41 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+
+<!-- theme_bootstrap_appstrap: Layouts/Startsite.html [begin] -->
+
+<div id="navigation" class="wrapper">
+	<div class="navbar-static-top">
+
+		<!--Hidden Header Region-->
+		<f:render partial="Area/Header/Hidden" />
+
+		<!--Header upper region-->
+		<f:render partial="Area/Header/Upper" />
+
+
+		<!--Header search region - hidden by default -->
+		<f:render partial="Area/Header/Search" />
+
+		<!--Header & Branding region-->
+		<f:render partial="Area/Header/MenuAndBrand" />
+	</div>
+</div>
+
+<f:cObject typoscriptObjectPath="lib.content.feature"/>
+
+<f:if condition="{f:render(section:'Default')}">
+	<f:then>
+		<div class="container">
+			<f:render section="Default"/>
+		</div>
+	</f:then>
+</f:if>
+
+<f:render partial="Area/Footer" section="Default" arguments="{_all}"/>
+
+<!-- theme_bootstrap_appstrap: Layouts/Startsite.html [end] -->
+
+
+
+
+
+

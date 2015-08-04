@@ -1,0 +1,100 @@
+{namespace theme=KayStrobach\Themes\ViewHelpers}
+
+<div class="header-upper">
+	<div class="header-upper-inner container">
+		<div class="row">
+			<div class="col-xs-8 col-xs-push-4">
+
+				<!--Show/hide trigger for #hidden-header -->
+				<div id="header-hidden-link">
+					<a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden" data-callback="searchFormFocus"><i></i>Open</a>
+				</div>
+
+				<!--social media icons-->
+				<div class="social-media">
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useTwitter')}">
+						<a href="https://twitter.com/{theme:constant(constant:'themes.configuration.socialmedia.twitterUsername')}"> <i class="fa fa-twitter-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useFacebook')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.facebookLink')}"> <i class="fa fa-facebook-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useLinkedin')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.linkedinLink')}"> <i class="fa fa-linkedin-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useGooglePlus')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.googlePlusLink')}"> <i class="fa fa-google-plus-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useYoutube')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.youtubeLink')}"> <i class="fa fa-youtube-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useXing')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.xingLink')}"> <i class="fa fa-xing-square"></i> </a>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.socialmedia.useSlack')}">
+						<a href="{theme:constant(constant:'themes.configuration.socialmedia.slackLink')}"> <i class="fa fa-slack-square"></i> </a>
+					</f:if>
+				</div>
+			</div>
+			<div class="col-xs-4 col-xs-pull-8">
+
+				<!--user menu-->
+				<div class="btn-group user-menu">
+
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
+						<f:then>
+							<f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="btn btn-link login-mobile">
+								<i class="fa fa-user"></i>
+							</f:link.page>
+						</f:then>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.registration')}">
+						<f:then>
+							<f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="btn btn-link signup">
+								Sign Up
+							</f:link.page>
+						</f:then>
+					</f:if>
+					<f:if condition="{theme:constant(constant:'themes.configuration.pages.login')}">
+						<f:then>
+							<f:link.page pageUid="{theme:constant(constant:'themes.configuration.pages.registration')}" class="btn btn-link login">
+								Login
+							</f:link.page>
+						</f:then>
+					</f:if>
+					<div class="btn-group language-menu">
+						<!--language menu-->
+						<a href="#en" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-gb"></span></a>
+						<ul class="dropdown-menu dropdown-menu-mini dropdown-menu-primary">
+							<li>
+								<a href="#es" class="lang-es"><span class="flag-icon flag-icon-es"></span> Spanish</a>
+							</li>
+							<li>
+								<a href="#pt" class="lang-pt"><span class="flag-icon flag-icon-pt"></span> Portguese</a>
+							</li>
+							<li>
+								<a href="#cn" class="lang-cn"><span class="flag-icon flag-icon-cn"></span> Chinese</a>
+							</li>
+							<li>
+								<a href="#se" class="lang-se"><span class="flag-icon flag-icon-se"></span> Swedish</a>
+							</li>
+						</ul>
+						<f:comment>
+							<theme:widget.languageMenu
+									availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
+									currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
+									defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
+									defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
+									defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+									/>
+							<f:if condition="{theme:constant(constant: 'themes.languages.available')}">
+							<span>
+								<f:translate key="languageMenu_label"/>
+							</span>
+							</f:if>
+						</f:comment>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

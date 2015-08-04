@@ -1,0 +1,148 @@
+----------------------------
+CHANGELOG
+----------------------------
+
+version 2.5.4, 04/04/2015
+----------------------------
+- Upgraded to Bootstrap 3.3.4 (replace /css, /fonts & /js folders)
+
+version 2.5.3, 10/02/2015
+----------------------------
+- Bug fixes for blog post pages media-body usage (replace blog-post.htm, blog-post-video.htm, blog-post-slideshow.htm & blog-post-audio.htm)
+
+version 2.5.2, 09/02/2015
+----------------------------
+- Upgraded to Bootstrap 3.3.2 (replace /css, /fonts & /js folders)
+- Upgraded to Font Awesome 4.3.0 (replace /css & /fonts) 
+- Upgraded to bootstrap-hover-dropdown 2.1.3 (replace /plugins/bootstrap-hover-dropdown folder)
+- Upgraded to Bootstrap Switch 3.3.2 (replace /plugins/bootstrap-switch folder)
+- Upgraded to Imagesloaded 3.1.8 (replace /plugins/imagesloaded folder)
+- Upgraded to Isotope 2.1.0 (replace /plugins/isotope folder)
+- Upgraded to jPanelMenu 1.4.1 (replace /plugins/jPanelMenu folder)
+- Upgraded to Magnific-Popup 1.0.0 (replace /plugins/magnific-popup folder)
+- Upgraded to Magnific-Popup 1.0.0 (replace /plugins/retina folder & <script src="plugins/retina/js/retina-1.1.0.min.js"></script> with <script src="plugins/retina/dist/retina.min.js"></script> in <head> tags)
+- Upgraded to Slider Revolution 4.6 (replace /plugins/slider-revolution folder & /js/scripts.js & /js/scripts.min.js files)
+
+version 2.5.1, 11/08/2014
+----------------------------
+- Upgraded to Bootstrap 3.2.0 (replace /css, /fonts & /js folders)
+
+version 2.5, 15/05/2014
+----------------------------
+- New feature: Added 2 new team pages, grid & team member & updated team page
+- New feature: Added extended about page with company timeline, customers carousel & more
+- New feature: Added about me page for personal use with latest projects popup gallery & timeline
+- New feature: Added 2 new blog list pages, grid & timeline & additional blog sidebar blocks
+- New feature: Added 3 new blog post types (audio, video & slideshow)
+- New feature: Demand plugin loading for improved performance (16 HTTP requests & 800+ KB lighter!)
+- New feature: Added logos carousel (see: about-extended.htm & elements.htm)
+- New feature: Integrated Owl Carousel & Magnific Popup jQuery plugins (see: about-extended.htm & about-me.htm)
+- New feature: Updated elements page
+- Added full width mega menu example
+- New header style (more variations to come) with new hidden search form & language selector
+- Upgraded to Font Awesome 4.1.0
+
+
+version 2.4.1, 15/04/2014
+----------------------------
+- Bug fix to broken HTML on team page
+
+version 2.4, 10/04/2014
+----------------------------
+- New feature: Responsive video support via fitvids.js plugin
+- New feature: 4 new timeline templates (see: timeline.htm, timeline-left.htm, timeline-right.htm, timeline-stacked.htm, timeline-stacked-down.htm)
+- New feature: 4 new pricing tables & 3 new comparison tables
+- New feature: Added hover drop down menus
+- New feature: Added Bootstrap Switch plugin (see: elements.htm)
+- New feature: Added boxed page layout (see: index-boxed.htm)
+- New feature: Added Backstretch plugin (http://srobbin.com/jquery-plugins/backstretch/) for background slideshows (see: backstretch.htm & backstretch-boxed.htm)
+- New feature: Drop down buttons (see elements.htm)
+- Removed following unused classes: .primary-colour-bg-50, .primary-colour-bg-80, .white-80, .white-60, .white-40
+- Removed following icon classes: .icon-mini, .icon-small, .icon-medium, .icon-large, .icon-xlarge, .icon-circle, .icon-circle-double, .icon-rounded, .icon-inverse, .icon-inverse-50, .icon-inverse-80, .icon-succes
+- Reorganised menu to fit new pages
+
+version 2.3, 28/02/2014
+----------------------------
+- New feature: Added Slider Revolution premium slider worth $14 (4 example pages)
+- New feature: Added new responsive font size functions (see elements.htm)
+- New feature: Added third level dropdown support & menu clean up
+- New feature: Added code syntax highlighted prismjs (see elements.htm)
+- New page: 404 error (404.htm)
+- Bootstrap 3.1.1 update
+- Font Awesome 4.0.3 update
+- Removed .well-small & .well-mini classes, use .well & .well-sm
+- Changed .badge-large, .label-large, .badge-xlarge, .label-xlarge to .badge-lg, .label-lg, .badge-xlg & .label-xlg
+- Replaced .pull-center with .text-center (CSS class still available for 2 more versions)
+- Made header fatter
+
+version 2.2.1, 30/01/2014
+----------------------------
+- Bootstrap 3.0.3 update
+- Modal background issue fix
+- Pagination example added to elements.htm
+- Tabs clean up & support for drop downs in tabs (see: elements.htm)
+
+version 2.2, 25/10/2013
+----------------------------
+- Upgrade to Font Awesome 4.0.0 (change change="icon- to class="fa fa-)
+- Added animate.css animation to social media icons
+
+version 2.1, 23/10/2013
+----------------------------
+- New: new slideshow layouts: boxed, behind & full width
+- New: new full width navbar option
+- Dropdown menu CSS clean up
+- Added local copy of jQuery migrate (jquery-migrate-1.2.1.min.js)
+- Added minified version of jQuery & script file (minified versions now loaded as default)
+- Add minified version of theme-style.css file
+- Fixed Safari slider flicker bug
+- Compressed all images with ImageOptim
+
+version 2.0, 25/09/2013
+----------------------------
+- New feature: Upgrade to Bootstrap 3.0 
+- New feature: jPanel Menu plugin integration for mobile menu option (see README.txt)
+- New feature: Sticky navigation on scroll using Clingify plugin (see README.txt) 
+- New feature: Retina ready (see README.txt)
+- New feature: Mobile first
+- New feature: Improved accessibility
+- New feature: Integrated animate.css plugin into slideshow to allow intro animations (see README.txt)
+- Removed fixed header class & page as navbar now fixes to top by default on scroll
+- Login dropdown in navbar is now a popup modal instead
+- Sign up button in navbar now opens a popup modal similar to login 
+- new .media-object-full class for full screen blog images on blog lists on desktop (default for mobile)
+- jQuery upgrade to version 1.10.2
+- tooltip is now invoked using data-toggle=”tooltip” rather than class="_tooltip"
+- popover is now invoked using data-toggle="popover" rather than class="_popover"
+- Updated starter templates to make use of Bootstrap 3.0 push & pulls system
+- Flat design & minor design clean up
+
+version 1.4, 26/07/2013
+----------------------------
+- Separated custom style from Bootstrap CSS, Bootstrap CSS code is now standalone
+- Separated Font Awesome from theme CSS, Font Awesome CSS code is now standalone
+- Made script.js file JSHint compliant 
+- Provide minified version of script.js, script.min.js
+- Colour variation bug fixes (reported by Fabian Peters)
+- Fixed responsive issues on customers page + code clean up
+
+version 1.3, 19/06/2013
+----------------------------
+- Upgrade to Bootstrap 2.3.2
+- Upgrade to Font Awesome 3.2.1
+
+version 1.2, 15/04/2013
+----------------------------
+- Upgrade to Bootstrap 2.3.1
+- Font Awesome update 3.0.2
+- Added minified version of bootstrap.css & responsive.css
+- IE debugs & RGBa colour fallbacks
+
+version 1.1, 23/01/2013
+----------------------------
+- iPad portrait CSS fixes
+- Upgrade to Bootstrap 2.3.0
+
+version 1.0, 23/01/2013
+----------------------------
+- Initial release

@@ -1,0 +1,4 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/TypoScript/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_appstrap/Configuration/TypoScript/Library/" extensions="setupts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_appstrap/Configuration/Elements/TypoScript/" extensions="setupts">
+

@@ -1,0 +1,65 @@
+lib.menu.main = HMENU
+lib.menu.main {
+	entryLevel = 0
+	includeNotInMenu = 0
+	excludeUidList = {$themes.configuration.menu.main.excludeUidList}
+	wrap >
+	1 = TMENU
+	1 {
+		expAll = 1
+		NO = 1
+		NO {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li>|</li>
+		}
+		ACT < .NO
+		ACT {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li>|</li>
+		}
+		IFSUB < .NO
+		IFSUB {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="dropdown dropdown-full">|</li>
+			before = <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			after = </a>
+			doNotLinkIt = {$themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages}
+		}
+		ACTIFSUB < .ACT
+		ACTIFSUB {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="dropdown dropdown-full"> |</li>
+			before = <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			after = </a>
+			doNotLinkIt = {$themes.configuration.menu.main.doNotLinkFirstLevelPagesWithSubPages}
+		}
+	}
+	2 >
+	2 = TMENU
+	2 {
+		current = 1
+		expAll = 1
+		wrap >
+		stdWrap.wrap = <ul class="dropdown-menu mega-menu" role="menu"><li role="presentation" class="dropdown-header">{field:title}</li><li class="presentation"><ul class="row list-unstyled">|</ul></li></ul>
+		stdWrap.wrap.insertData = 1
+		maxItems = 4
+		insertData = 1
+		NO = 1
+		NO {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li class="col-sm-3">{$themes.configuration.menu.main.prefixSecondLevel}|{field:abstract}</li>
+			ATagParams = class="menu-item"
+		}
+	}
+	3 = TMENU
+	3 {
+		expAll = 1
+		wrap = <ul class="unstyled">|</ul>
+		NO = 1
+		NO {
+			wrapItemAndSub.insertData = 1
+			wrapItemAndSub = <li>|</li>
+		}
+	}
+}
+

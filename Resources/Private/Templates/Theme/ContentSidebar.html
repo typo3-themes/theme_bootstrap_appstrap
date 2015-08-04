@@ -1,0 +1,23 @@
+<div xmlns:f="http://typo3.org/ns/fluid/ViewHelpers" xmlns="http://www.w3.org/1999/xhtml"
+     lang="en">
+	<f:layout name="Default"/>
+	<f:section name="Default">
+		<!-- theme_bootstrap: Templates/Theme/ContentSidebar.html [begin] -->
+
+		<div id="templateContentSidebar">
+			<f:render partial="Content/Header" section="Default" arguments="{_all}"/>
+			<div class="container">
+				<div class="row">
+					<div id="contentMain" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+						<f:render partial="Content/Main" section="Default" arguments="{_all}"/>
+					</div>
+					<aside id="contentSidebar" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+						<f:render partial="Content/Sidebar" section="Default" arguments="{_all}"/>
+					</aside>
+				</div>
+			</div>
+		</div>
+
+		<!-- theme_bootstrap: Templates/Theme/ContentSidebar.html [end] -->
+	</f:section>
+</div>
