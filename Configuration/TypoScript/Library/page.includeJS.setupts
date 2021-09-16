@@ -1,6 +1,13 @@
 # Settings for the development system
 
 page {
+	includeJSLibs {
+		jquery = EXT:theme_bootstrap_appstrap/Resources/Public/JavaScript/jquery.min.js
+		jquery {
+			external = 1
+			disableCompression = 1
+			excludeFromConcatenation = 1
+		}
 	includeJS {
 		custom = EXT:theme_bootstrap_appstrap/Resources/Public/JavaScript/script.min.js
 		custom {
