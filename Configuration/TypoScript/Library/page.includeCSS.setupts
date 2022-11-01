@@ -8,14 +8,3 @@ page {
 		#}
 	}
 }
-
-[globalVar = LIT:1 = {$themes.mode.isProduction}]
-	page {
-		includeCSS {
-			fontawesome = //maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css
-			fontawesome {
-				external = 1
-			}
-		}
-	}
-[global]
