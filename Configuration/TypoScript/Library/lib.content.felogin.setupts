@@ -1,0 +1,7 @@
+plugin.tx_felogin_login {
+    view {
+        templateRootPaths {
+            5 = EXT:theme_bootstrap_appstrap/Resources/Private/Extensions/felogin/Templates
+        }
+    }
+}
