@@ -3,3 +3,12 @@
 
 themes.configuration.css.concatenate = 0
 page.config.concatenateCss = 0
+
+#cat=hidden/notsupported;
+themes.configuration.footer.email =
+
+#cat=hidden/notsupported;
+themes.configuration.footer.address =
+
+#cat=hidden/notsupported;
+themes.configuration.meta.copyright =
