@@ -1,0 +1,25 @@
+# Name and description of the theme (required)
+title            : Minimalistic theme for reference purposes
+version          : 1.0.3
+description      : |
+  This is the description of the theme.
+  With the starting pipe it can contain multiple lines.
+
+  The newlines in this description will be preserved.
+editor:
+  ignoreAllowedConstants: false
+  allowedConstants:
+    themes.configuration.footer.email:
+      allowed: true
+    themes.configuration.meta.copyright:
+      allowed: true
+    themes.configuration.baseurlImage:
+      allowed: true
+    themes.configuration.favicon:
+      allowed: true
+    themes.configuration.colors.primary:
+      allowed: true
+    themes.configuration.meta.defaults.author:
+      allowed: true
+    themes.configuration.meta.defaults.authorEmail:
+      allowed: true
