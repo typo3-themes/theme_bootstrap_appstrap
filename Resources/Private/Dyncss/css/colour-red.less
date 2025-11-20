@@ -1,21 +1,25 @@
+@primary:        @brand-primary; // sea blue
+@primary-dark: darken(@primary, 10%);
+@primary-darker: darken(@primary, 20%);
+
 /*/////////////////////////////////////////////////////////////////////
- // 
+ //
  // Custom theme code styles
  // Written by Themelize.me (http://themelize.me)
- // 
+ //
  // This is an empty starter template for overriding styles
  // set by Bootstrap & the theme
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // Remove unused code for better performances
- // 
+ //
  // ----------------------------------------------------
- // 
+ //
  // @see - Usefuls tools online for editing
  // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
  // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
- // 
+ //
  // @note
  // To ensure custom styles are picked up
  // wrap definitions in body tag
@@ -23,7 +27,7 @@
  // body .navbar-inner {
  //   background: #ff0000;
  // }
- // 
+ //
  /////////////////////////////////////////////////////////////////////*/
 .list-reset {
   margin: 0;
@@ -47,7 +51,7 @@
   border: none;
   text-shadow: none;
   line-height: 1;
-  color: #be3e1d;
+  color: @primary;
   max-width: none;
   text-align: center;
   float: none;
@@ -62,7 +66,7 @@
   font-family: "Rambla", Arial, serif;
 }
 .branding h1 span {
-  color: #464646;
+  color: @brand-secondary;
   color: rgba(27, 27, 27, 0.8);
   font-weight: 700;
 }
@@ -88,7 +92,7 @@
 }
 .header-button.open,
 .header-button:hover {
-  background: #be3e1d;
+  background: @primary;
   color: white;
   cursor: pointer;
   text-decoration: none;
@@ -105,30 +109,30 @@
  */
 body a,
 body a:focus {
-  color: #be3e1d;
+  color: @primary;
   text-decoration: none;
 }
 body a:hover {
-  color: #923016;
+  color: @primary-dark;
   text-decoration: underline;
 }
 body #footer {
-  border-top: 2px solid #be3e1d;
+  border-top: 2px solid @primary;
   /* primary colour */
 }
 body #footer #toplink i {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body #header-hidden-link a.show-hide,
 body .flexslider-wrapper .flex-control-nav li a.flex-active,
 body .static-banner .flex-control-nav li a.flex-active {
-  background: #923016;
+  background: @primary-dark;
   /* primary colour */
 }
 body .flex-direction-nav a,
 body .flex-direction-nav a:before {
-  color: #be3e1d !important;
+  color: @primary !important;
 }
 .btn {
   font-size: 14px;
@@ -140,7 +144,7 @@ body .flex-direction-nav a:before {
   display: inline-block;
 }
 .btn-default {
-  color: #4b4b4b;
+  color: @brand-secondary;
   background-color: #f5f5f5;
   border-color: #e5e5e5;
   border-left: none;
@@ -152,7 +156,7 @@ body .flex-direction-nav a:before {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #4b4b4b;
+  color: @brand-secondary;
   background-color: #e1e1e1;
   border-color: #c6c6c6;
 }
@@ -181,12 +185,12 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: #f5f5f5;
-  background-color: #4b4b4b;
+  background-color: @brand-secondary;
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary-dark;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -194,8 +198,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #9b3218;
-  border-color: #732512;
+  background-color: @primary-dark;
+  border-color: @primary-dark;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -217,17 +221,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary;
 }
 .btn-primary .badge {
-  color: #be3e1d;
+  color: @primary;
   background-color: #ffffff;
 }
 .btn-primary-dark {
   color: #ffffff;
-  background-color: #892d15;
-  border-color: #6e2411;
+  background-color: @primary-dark;
+  border-color: @primary-dark;
 }
 .btn-primary-dark:hover,
 .btn-primary-dark:focus,
@@ -235,8 +239,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-primary-dark.active,
 .open .dropdown-toggle.btn-primary-dark {
   color: #ffffff;
-  background-color: #66210f;
-  border-color: #391309;
+  background-color: @primary-darker;
+  border-color: @primary-darker;
 }
 .btn-primary-dark:active,
 .btn-primary-dark.active,
@@ -258,11 +262,11 @@ fieldset[disabled] .btn-primary-dark:active,
 .btn-primary-dark.disabled.active,
 .btn-primary-dark[disabled].active,
 fieldset[disabled] .btn-primary-dark.active {
-  background-color: #892d15;
-  border-color: #6e2411;
+  background-color: @primary-darker;
+  border-color: @primary-darker;
 }
 .btn-primary-dark .badge {
-  color: #892d15;
+  color: @primary-darker;
   background-color: #ffffff;
 }
 .btn-block {
@@ -356,9 +360,9 @@ ul.nav-tabs li.active a,
 ul.nav-tabs li.open.active a,
 ul.nav-tabs li.active a:hover,
 ul.nav-tabs li.open.active a:hover {
-  color: #be3e1d;
+  color: @primary;
   border: 1px solid #e6e6e6;
-  border-top: 4px solid #be3e1d;
+  border-top: 4px solid @primary;
   border-radius: 0 !important;
 }
 ul.nav-tabs li.open a,
@@ -400,17 +404,17 @@ ul.nav-tabs li.open.active a:active {
   font-weight: normal;
 }
 .vertical-tabs ul.nav-stacked li a:hover i {
-  color: #be3e1d;
+  color: @primary;
 }
 .vertical-tabs ul.nav-stacked li.active a,
 .vertical-tabs ul.nav-stacked li.active a:hover {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-  border-left: 4px solid #be3e1d;
+  border-left: 4px solid @primary;
 }
 .vertical-tabs ul.nav-stacked li.active a i,
 .vertical-tabs ul.nav-stacked li.active a:hover i {
-  color: #be3e1d;
+  color: @primary;
 }
 .vertical-tabs .tab-content {
   margin-left: -15px;
@@ -431,7 +435,7 @@ ul.nav-tabs li.open.active a:active {
   font-weight: normal;
 }
 .bold-tabs ul li a:hover i {
-  color: #be3e1d;
+  color: @primary;
 }
 @media (min-width: 768px) {
   ul.nav-tabs {
@@ -468,7 +472,7 @@ ul.nav-tabs li.open.active a:active {
   ul.nav-tabs li.open.active a,
   ul.nav-tabs li.active a:hover,
   ul.nav-tabs li.open.active a:hover {
-    border-top: 4px solid #be3e1d;
+    border-top: 4px solid @primary;
     border-right: 1px solid #e6e6e6;
     border-left: 1px solid #e6e6e6;
     border-bottom: none;
@@ -511,7 +515,7 @@ ul.nav-tabs li.open.active a:active {
   .vertical-tabs ul.nav-tabs li.open.active a,
   .vertical-tabs ul.nav-tabs li.active a:hover,
   .vertical-tabs ul.nav-tabs li.open.active a:hover {
-    border-left: 4px solid #be3e1d;
+    border-left: 4px solid @primary;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
     border-right: none;
@@ -541,13 +545,13 @@ ul.nav-tabs li.open.active a:active {
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: #be3e1d;
+  color: @primary;
 }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #923016;
+  color: @primary-dark;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -555,8 +559,8 @@ ul.nav-tabs li.open.active a:active {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background: #be3e1d;
-  border-color: #be3e1d;
+  background: @primary;
+  border-color: @primary;
 }
 .nav-tabs > li.dropdown {
   position: relative;
@@ -636,23 +640,23 @@ ul.nav-tabs li.open.active a:active {
 }
 /*
  * --------------------------------------------------
- * 2. Header & Navigation 
+ * 2. Header & Navigation
  *--------------------------------------------------
  */
 body .header-hidden {
-  background: #923016;
+  background: @primary-dark;
   /* primary colour */
 }
 body .header-upper {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body .header {
-  border-bottom-color: #be3e1d;
+  border-bottom-color: @primary;
   /* primary colour */
 }
 body .header .navbar-brand {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body .btn-navbar:hover,
@@ -660,30 +664,30 @@ body .btn-navbar.open,
 body .navbar-btn.open,
 body .navbar-btn:hover,
 body .search-form-tigger:hover {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body.header-old #navigation .header {
-  border-top-color: #be3e1d;
+  border-top-color: @primary;
   /* primary colour */
 }
 body.header-old #navigation .header-hidden {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body.header-old #navigation #header-hidden-link a.show-hide,
 body.header-old #navigation #header-hidden-link a.top-link {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body.header-old #navigation .navbar-brand {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body.header-old #navigation .btn-primary {
   color: #ffffff;
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary-dark;
   /* @see: Button maker: http://charliepark.org/bootstrap_buttons/ */
 }
 body.header-old #navigation .btn-primary:hover,
@@ -692,8 +696,8 @@ body.header-old #navigation .btn-primary:active,
 body.header-old #navigation .btn-primary.active,
 .open .dropdown-togglebody.header-old #navigation .btn-primary {
   color: #ffffff;
-  background-color: #9b3218;
-  border-color: #732512;
+  background-color: @primary-dark;
+  border-color: @primary-dark;
 }
 body.header-old #navigation .btn-primary:active,
 body.header-old #navigation .btn-primary.active,
@@ -715,31 +719,31 @@ fieldset[disabled] body.header-old #navigation .btn-primary:active,
 body.header-old #navigation .btn-primary.disabled.active,
 body.header-old #navigation .btn-primary[disabled].active,
 fieldset[disabled] body.header-old #navigation .btn-primary.active {
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary-dark;
 }
 body.header-old #navigation .btn-primary .badge {
-  color: #be3e1d;
+  color: @primary;
   background-color: #ffffff;
 }
 body.header-old #navigation .navbar,
 body.header-old #navigation .js-clingify-locked {
-  border-bottom-color: #be3e1d;
+  border-bottom-color: @primary;
   /* primary colour */
 }
 body .navbar-nav .divider-vertical {
-  border-left-color: #7c2813;
+  border-left-color: @primary-darker;
   border-right-color: rgba(255, 255, 255, 0.15);
 }
 body .navbar-nav > li {
-  border-left-color: #7c2813;
+  border-left-color: @primary-darker;
   border-right-color: rgba(255, 255, 255, 0.15);
 }
 body .navbar .nav li > .btn.btn-primary,
 body .navbar .nav li > .btn.btn-navbar {
   color: #ffffff;
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary-dark;
 }
 body .navbar .nav li > .btn.btn-primary:hover,
 body .navbar .nav li > .btn.btn-navbar:hover,
@@ -752,8 +756,8 @@ body .navbar .nav li > .btn.btn-navbar.active,
 .open .dropdown-togglebody .navbar .nav li > .btn.btn-primary,
 .open .dropdown-togglebody .navbar .nav li > .btn.btn-navbar {
   color: #ffffff;
-  background-color: #9b3218;
-  border-color: #732512;
+  background-color: @primary-dark;
+  border-color: @primary-dark;
 }
 body .navbar .nav li > .btn.btn-primary:active,
 body .navbar .nav li > .btn.btn-navbar:active,
@@ -793,12 +797,12 @@ body .navbar .nav li > .btn.btn-primary[disabled].active,
 body .navbar .nav li > .btn.btn-navbar[disabled].active,
 fieldset[disabled] body .navbar .nav li > .btn.btn-primary.active,
 fieldset[disabled] body .navbar .nav li > .btn.btn-navbar.active {
-  background-color: #be3e1d;
-  border-color: #a8371a;
+  background-color: @primary;
+  border-color: @primary;
 }
 body .navbar .nav li > .btn.btn-primary .badge,
 body .navbar .nav li > .btn.btn-navbar .badge {
-  color: #be3e1d;
+  color: @primary;
   background-color: #ffffff;
 }
 body .navbar-nav li.dropdown > a:hover .caret {
@@ -822,7 +826,7 @@ body .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
   #main-menu > li.home-link a:link i,
   .navbar-nav > li.home-link a:focus i,
   #main-menu > li.home-link a:focus i {
-    color: #be3e1d;
+    color: @primary;
     /* primary colour */
   }
   .header-old .navbar-nav > li.home-link a i,
@@ -831,7 +835,7 @@ body .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
   .header-old #main-menu > li.home-link a:link i,
   .header-old .navbar-nav > li.home-link a:focus i,
   .header-old #main-menu > li.home-link a:focus i {
-    color: #be3e1d;
+    color: @primary;
     /* primary colour */
   }
   .navbar-nav > li.open > .dropdown-toggle,
@@ -842,23 +846,23 @@ body .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
   #main-menu > li.open > .dropdown-toggle,
   .navbar-nav > li.open.active > .dropdown-toggle,
   #main-menu > li.open.active > .dropdown-toggle {
-    border-top-color: #be3e1d !important;
+    border-top-color: @primary !important;
     /* primary colour */
   }
   .navbar-collapse .dropdown-menu {
-    border-bottom-color: #be3e1d;
+    border-bottom-color: @primary;
     /* primary colour */
   }
   .navbar-collapse .dropdown-menu li a.menu-item:hover:before {
-    color: #be3e1d;
+    color: @primary;
     /* primary colour */
   }
   .navbar-collapse .dropdown-menu .dropdown-submenu > a::after {
-    border-color: transparent transparent #be3e1d transparent;
+    border-color: transparent transparent @primary transparent;
   }
   .navbar-collapse .dropdown-menu li a:hover:before,
   .navbar-collapse .dropdown-menu li a.menu-item:hover:before {
-    color: #be3e1d !important;
+    color: @primary !important;
     /* primary colour */
   }
   .navbar-collapse .dropdown-menu li.active > a:before,
@@ -869,66 +873,66 @@ body .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
   .navbar-collapse .dropdown-menu li.dropdown-submenu .dropdown-menu .active > a:focus:before,
   .navbar-collapse .dropdown-menu li a:hover:before,
   .navbar-collapse .dropdown-menu li a.menu-item:hover:before {
-    color: #be3e1d !important;
+    color: @primary !important;
     /* primary colour */
   }
 }
 .nav .caret {
-  border-top-color: #be3e1d;
-  border-bottom-color: #be3e1d;
+  border-top-color: @primary;
+  border-bottom-color: @primary;
 }
 .nav a:hover {
-  border-top-color: #923016;
-  border-bottom-color: #923016;
+  border-top-color: @primary-dark;
+  border-bottom-color: @primary-dark;
 }
 /*
  * --------------------------------------------------
  * 3. Content Area
- *-------------------------------------------------- 
+ *--------------------------------------------------
  */
 body .pricing-stack .well .price {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body .pricing-stack .well.active {
-  border-color: #be3e1d;
+  border-color: @primary;
   /* primary colour */
 }
 body .pricing-stack .well.active .price {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
-  border-color: #be3e1d;
+  border-color: @primary;
 }
 body .section-menu ul.nav-list li a:hover i {
-  color: #be3e1d;
+  color: @primary;
 }
 body .section-menu ul.nav-list li.active > a,
 body .section-menu ul.nav-list li.active > a:hover {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
-  border-left-color: #be3e1d;
+  border-left-color: @primary;
   /* primary colour */
 }
 body .section-menu ul.nav-list li.active > a i,
 body .section-menu ul.nav-list li.active > a:hover i {
-  color: #be3e1d;
+  color: @primary;
 }
 body .stats .stat .well {
-  background: #be3e1d;
-  background-image: -webkit-radial-gradient(circle, #be3e1d, #923016);
-  background-image: radial-gradient(circle, #be3e1d, #923016);
+  background: @primary;
+  background-image: -webkit-radial-gradient(circle, @primary, @primary-dark);
+  background-image: radial-gradient(circle, @primary, @primary-dark);
   background-repeat: no-repeat;
 }
 body .stats .stat .well:after {
-  border-top-color: #be3e1d;
+  border-top-color: @primary;
   /* primary colour */
 }
 body .date-wrapper span.date-m {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body .tags .tag {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 /*
@@ -938,26 +942,26 @@ body .tags .tag {
  *--------------------------------------------------
  */
 body .primary-colour {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body .primary-colour-bg {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body .spacer {
-  color: #be3e1d;
+  color: @primary;
   /* primary colour */
 }
 body .spacer.dark {
-  color: #923016;
+  color: @primary-dark;
 }
 body .social-media a:hover {
-  background: #be3e1d;
+  background: @primary;
   /* primary colour */
 }
 body a .de-em {
-  color: rgba(190, 62, 29, 0.8);
+  color: @primary;
 }
 .slider-appstrap-theme .tp-bullets li a:hover,
 .slider-appstrap-theme .tp-bullets.round li a:hover,
@@ -983,46 +987,46 @@ body a .de-em {
 .slider-appstrap-theme .tp-bullets.round .bullet.selected,
 .slider-appstrap-theme .tp-bullets.simplebullets.round .bullet.selected,
 .flex-control-nav .bullet.selected {
-  background: #be3e1d;
+  background: @primary;
 }
 .slider-appstrap-theme .tp-caption a {
-  color: #be3e1d;
+  color: @primary;
 }
 .slider-appstrap-theme .tp-caption a:hover {
-  color: #923016;
+  color: @primary-dark;
 }
 .slider-appstrap-theme .tp-bannertimer {
-  background: #be3e1d;
+  background: @primary;
 }
 .slider-appstrap-theme .tparrows:before,
 .flex-direction-nav a:before {
-  color: #be3e1d;
+  color: @primary;
 }
 .bootstrap-switch > div > span.bootstrap-switch-primary {
-  background: #be3e1d;
+  background: @primary;
 }
 .bootstrap-switch.bootstrap-switch-focused {
-  border-color: #be3e1d;
+  border-color: @primary;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .dropdown-menu-primary {
-  border-bottom-color: #be3e1d !important;
+  border-bottom-color: @primary !important;
 }
 .dropdown-menu-primary a:hover:before {
-  color: #be3e1d !important;
+  color: @primary !important;
 }
 .timeline-item {
-  border-bottom-color: #be3e1d;
+  border-bottom-color: @primary;
 }
 .timeline-item.tag-featured:after,
 .timeline-item.marker-highlight:after,
 .timeline-item.highlight:after {
-  color: #be3e1d;
+  color: @primary;
 }
 .owl-controls.clickable .owl-buttons div:hover,
 .owl-controls .owl-page.active span,
 .owl-controls.clickable .owl-page:hover span {
-  background: #be3e1d;
+  background: @primary;
 }
