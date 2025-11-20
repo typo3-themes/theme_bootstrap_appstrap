@@ -13,11 +13,13 @@
 				<div class="slogan">{theme:constant(constant: 'themes.configuration.siteName')}</div>
 			</div>
 
-			<!--Search trigger -->
-			<a href="#search" class="search-form-tigger" data-toggle="search-form" data-target=".header-search">
-				</span>
-				<i class="fa fa-search fa-flip-horizontal search-icon"></i>
-			</a>
+            <f:if condition="{theme:constant(constant: 'themes.configuration.pages.search')}">
+                <!--Search trigger -->
+                <f:variable name="searchUid">{theme:constant(constant:'themes.configuration.pages.search')}</f:variable>
+                <a href="{f:uri.page(pageUid: searchUid)}#search" class="search-form-tigger" data-toggle="search-form" data-target=".header-search">
+                    <i class="fa fa-search fa-flip-horizontal search-icon"></i>
+                </a>
+            </f:if>
 
 			<!-- mobile collapse menu button - data-toggle="toggle" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu -->
 			<a href="#top" class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse" data-direction="right"><i class="fa fa-bars"></i></a>
