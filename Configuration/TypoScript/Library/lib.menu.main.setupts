@@ -40,7 +40,7 @@ lib.menu.main {
 		current = 1
 		expAll = 1
 		wrap >
-		stdWrap.wrap = <ul class="dropdown-menu mega-menu" role="menu"><li role="presentation" class="dropdown-header">{field:title}</li><li class="presentation"><ul class="row list-unstyled">|</ul></li></ul>
+		stdWrap.wrap = <ul class="dropdown-menu mega-menu" role="menu"><li class="presentation"><ul class="row list-unstyled">|</ul></li></ul>
 		stdWrap.wrap.insertData = 1
 		maxItems = 4
 		insertData = 1
