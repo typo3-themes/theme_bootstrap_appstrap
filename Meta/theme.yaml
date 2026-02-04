@@ -9,6 +9,8 @@ description      : |
 editor:
   ignoreAllowedConstants: false
   allowedConstants:
+    themes.configuration.siteName:
+      allowed: true
     themes.configuration.footer.email:
       allowed: true
     themes.configuration.meta.copyright:
