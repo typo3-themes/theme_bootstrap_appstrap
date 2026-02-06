@@ -11,11 +11,7 @@ editor:
   allowedConstants:
     themes.configuration.siteName:
       allowed: true
-    themes.configuration.footer.email:
-      allowed: true
     themes.configuration.meta.copyright:
-      allowed: true
-    themes.configuration.baseurlImage:
       allowed: true
     themes.configuration.favicon:
       allowed: true
@@ -24,4 +20,40 @@ editor:
     themes.configuration.meta.defaults.author:
       allowed: true
     themes.configuration.meta.defaults.authorEmail:
+      allowed: true
+    themes.configuration.socialmedia.useTwitter:
+      allowed: true
+    themes.configuration.socialmedia.twitterUsername:
+      allowed: true
+    themes.configuration.socialmedia.useFacebook:
+      allowed: true
+    themes.configuration.socialmedia.facebookLink:
+      allowed: true
+    themes.configuration.socialmedia.useLinkedin:
+      allowed: true
+    themes.configuration.socialmedia.useLinkedLink:
+      allowed: true
+    themes.configuration.socialmedia.useYoutube:
+      allowed: true
+    themes.configuration.socialmedia.youtubeLink:
+      allowed: true
+    themes.configuration.socialmedia.useXing:
+      allowed: true
+    themes.configuration.socialmedia.xingLink:
+      allowed: true
+    themes.configuration.socialmedia.useSlack:
+      allowed: true
+    themes.configuration.socialmedia.slackLink:
+      allowed: true
+    themes.configuration.header.logo.main.file:
+      allowed: true
+    themes.configuration.header.logo.main.height:
+      allowed: true
+    themes.configuration.header.logo.main.width:
+      allowed: true
+    themes.configuration.pages.startsite:
+      allowed: true
+    themes.configuration.pages.search:
+      allowed: true
+    themes.configuration.pages.login:
       allowed: true
