@@ -1,0 +1,4 @@
+@import 'EXT:theme_bootstrap/Configuration/PageTS/tsconfig.typoscript'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/PageTS/Library/*.tsconfig'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/BackendLayouts/*.tsconfig'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/Elements/PageTS/*.tsconfig'

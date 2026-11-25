@@ -1,0 +1,4 @@
+@import 'EXT:theme_bootstrap/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/TypoScript/Library/*.setup.typoscript'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/Elements/TypoScript/*.setup.typoscript'
+

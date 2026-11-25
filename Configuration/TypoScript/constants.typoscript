@@ -1,5 +1,5 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/TypoScript/constants.txt">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_appstrap/Configuration/TypoScript/Library/" extensions="constantsts">
+@import 'EXT:theme_bootstrap/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:theme_bootstrap_appstrap/Configuration/TypoScript/Library/*.constants.typoscript'
 
 themes.configuration.css.concatenate = 0
 page.config.concatenateCss = 0
